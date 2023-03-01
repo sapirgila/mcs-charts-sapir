@@ -3,12 +3,23 @@ entries:
   service-creator:
   - apiVersion: v2
     appVersion: 1.0.0
-    created: "2023-03-02T00:24:48.199839+02:00"
+    created: "2023-03-02T00:32:37.62365+02:00"
     description: A Helm chart for Kubernetes
     digest: 1bf35c6099ab0eb78b7b29919636f682c1ac6197e5af2c79c76f5ef880361e66
     name: service-creator
     type: application
     urls:
-    - creator/service-creator-0.1.0.tgz
+    - https://sapirgila.github.io/mcs-charts-sapir/docs/creator/service-creator-0.1.0.tgz
     version: 0.1.0
-generated: "2023-03-02T00:24:48.198615+02:00"
+  service-operator:
+  - apiVersion: v2
+    appVersion: 1.0.0
+    created: "2023-03-02T00:32:37.623955+02:00"
+    description: A Helm chart for Kubernetes
+    digest: f2a875443831690abfcd2128db98ea121daa2b092f1d3f241c2255285b71e222
+    name: service-operator
+    type: application
+    urls:
+    - https://sapirgila.github.io/mcs-charts-sapir/docs/operator/service-operator-0.1.0.tgz
+    version: 0.1.0
+generated: "2023-03-02T00:32:37.622844+02:00"
