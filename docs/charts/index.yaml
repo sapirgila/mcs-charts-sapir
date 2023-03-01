@@ -1,9 +1,30 @@
 apiVersion: v1
 entries:
+  integration-tests:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2023-03-02T01:17:23.264574+02:00"
+    dependencies:
+    - name: service-creator
+      repository: https://sapirgila.github.io/mcs-charts-sapir/charts/
+      version: 0.1.0
+    - name: service-creator
+      repository: https://sapirgila.github.io/mcs-charts-sapir/charts/
+      version: 0.1.0
+    - name: xap
+      repository: http://resources.gigaspaces.com/helm-charts-ea
+      version: 16.3.0-m3
+    description: A Helm chart for mcs-integration tests
+    digest: cfe158855ddad18b7e4deac1c1d2e534edbbabef9a1b3258d7f33aa4474b19dc
+    name: integration-tests
+    type: application
+    urls:
+    - https://sapirgila.github.io/mcs-charts-sapir/charts/integration-tests-0.1.0.tgz
+    version: 0.1.0
   service-creator:
   - apiVersion: v2
     appVersion: 1.0.0
-    created: "2023-03-02T01:03:20.610794+02:00"
+    created: "2023-03-02T01:17:23.26498+02:00"
     description: A Helm chart for Kubernetes
     digest: 1bf35c6099ab0eb78b7b29919636f682c1ac6197e5af2c79c76f5ef880361e66
     name: service-creator
@@ -14,7 +35,7 @@ entries:
   service-operator:
   - apiVersion: v2
     appVersion: 1.0.0
-    created: "2023-03-02T01:03:20.611174+02:00"
+    created: "2023-03-02T01:17:23.265328+02:00"
     description: A Helm chart for Kubernetes
     digest: 8e76c1fe89b2c6aa86eef3f94afbc0028292a01d3b6ac5764686541da5710c45
     name: service-operator
@@ -22,4 +43,4 @@ entries:
     urls:
     - https://sapirgila.github.io/mcs-charts-sapir/charts/service-operator-0.1.0.tgz
     version: 0.1.0
-generated: "2023-03-02T01:03:20.609979+02:00"
+generated: "2023-03-02T01:17:23.257699+02:00"
