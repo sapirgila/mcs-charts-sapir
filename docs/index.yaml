@@ -1,24 +1,37 @@
 apiVersion: v1
 entries:
-  integration-tests:
+  xap:
   - apiVersion: v2
-    appVersion: 1.16.0
-    created: "2023-03-01T21:29:39.120968+02:00"
+    appVersion: "1.0"
+    created: "2023-03-01T22:04:15.5367+02:00"
     dependencies:
-    - name: service-creator
-      repository: file:///Users/sapirgilad/Downloads/mcs-integration2/helm/service-creator
-      version: 0.1.0
-    - name: service-operator
-      repository: file:///Users/sapirgilad/Downloads/mcs-integration2/helm/service-operator
-      version: 0.1.0
-    - name: xap
-      repository: http://resources.gigaspaces.com/helm-charts-ea
+    - alias: manager
+      name: xap-manager
+      repository: file://../xap-manager
       version: 16.3.0-m3
-    description: A Helm chart for mcs-integration tests
-    digest: ed92e76f5f8e053898bcd8e30e6796be98177986eb198060f03b3826bd97f7bd
-    name: integration-tests
-    type: application
+    - alias: operator
+      name: xap-operator
+      repository: file://../xap-operator
+      version: 16.3.0-m3
+    - alias: spacedeck
+      condition: spacedeck.enabled
+      name: spacedeck
+      repository: file://../spacedeck
+      version: 16.3.0-m3
+    - alias: grafana
+      condition: metrics.enabled
+      name: grafana
+      repository: https://grafana.github.io/helm-charts
+      version: 6.44.7
+    - alias: influxdb
+      condition: metrics.enabled
+      name: influxdb
+      repository: https://influxdata.github.io/helm-charts
+      version: 4.12.0
+    description: A Helm chart for GigaSpaces XAP
+    digest: fd5bd09c44281e1d2b666602e8ccff6bc9fc7c9049ad17c81c00ff69bf728a57
+    name: xap
     urls:
-    - https://sapirgila.github.io/mcs-charts-sapir/integration-tests-0.1.0.tgz
-    version: 0.1.0
-generated: "2023-03-01T21:29:39.112286+02:00"
+    - charts/xap-16.3.0-m3.tgz
+    version: 16.3.0-m3
+generated: "2023-03-01T22:04:15.529482+02:00"

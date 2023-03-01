@@ -9,11 +9,10 @@ maxReplicas: 100
 targetCPUUtilizationPercentage: 80
 
 image:
-#  repository: gigaspaces/mcs-service-creator
-  repository: sapirgilad/creator
+  repository: gigaspaces/mcs-service-creator
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
-  tag: 370
+  tag: latest
 imagePullSecrets:
   - name: "docker-secret"
 

@@ -24,12 +24,12 @@ version: 0.1.0
 appVersion: "1.16.0"
 
 dependencies:
-  - name: service-creator
-    version: 0.1.0
-    repository: file:///Users/sapirgilad/Downloads/mcs-integration2/helm/service-creator
-  - name: service-operator
-    version: 0.1.0
-    repository: file:///Users/sapirgilad/Downloads/mcs-integration2/helm/service-operator
+#  - name: service-creator
+#    version: 0.1.0
+#    repository: file:///Users/sapirgilad/Downloads/mcs-integration2/helm/service-creator
+#  - name: service-operator
+#    version: 0.1.0
+#    repository: file:///Users/sapirgilad/Downloads/mcs-integration2/helm/service-operator
   - name: xap
     repository: http://resources.gigaspaces.com/helm-charts-ea
     version: 16.3.0-m3
