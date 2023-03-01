@@ -1,37 +1,18 @@
 apiVersion: v1
 entries:
-  xap:
+  integration-tests:
   - apiVersion: v2
-    appVersion: "1.0"
-    created: "2023-03-01T22:04:15.5367+02:00"
+    appVersion: 1.16.0
+    created: "2023-03-01T22:10:58.937135+02:00"
     dependencies:
-    - alias: manager
-      name: xap-manager
-      repository: file://../xap-manager
+    - name: xap
+      repository: http://resources.gigaspaces.com/helm-charts-ea
       version: 16.3.0-m3
-    - alias: operator
-      name: xap-operator
-      repository: file://../xap-operator
-      version: 16.3.0-m3
-    - alias: spacedeck
-      condition: spacedeck.enabled
-      name: spacedeck
-      repository: file://../spacedeck
-      version: 16.3.0-m3
-    - alias: grafana
-      condition: metrics.enabled
-      name: grafana
-      repository: https://grafana.github.io/helm-charts
-      version: 6.44.7
-    - alias: influxdb
-      condition: metrics.enabled
-      name: influxdb
-      repository: https://influxdata.github.io/helm-charts
-      version: 4.12.0
-    description: A Helm chart for GigaSpaces XAP
-    digest: fd5bd09c44281e1d2b666602e8ccff6bc9fc7c9049ad17c81c00ff69bf728a57
-    name: xap
+    description: A Helm chart for mcs-integration tests
+    digest: a30c1226d1255488331aafc885ea40ae8c5923f920c7a4c1cf6ef911309d8934
+    name: integration-tests
+    type: application
     urls:
-    - charts/xap-16.3.0-m3.tgz
-    version: 16.3.0-m3
-generated: "2023-03-01T22:04:15.529482+02:00"
+    - integration-tests-0.1.0.tgz
+    version: 0.1.0
+generated: "2023-03-01T22:10:58.932705+02:00"
