@@ -1,0 +1,12 @@
+dependencies:
+- name: service-creator
+  repository: file:///Users/sapirgilad/Downloads/mcs-integration2/helm/service-creator
+  version: 0.1.0
+- name: service-operator
+  repository: file:///Users/sapirgilad/Downloads/mcs-integration2/helm/service-operator
+  version: 0.1.0
+- name: xap
+  repository: http://resources.gigaspaces.com/helm-charts-ea
+  version: 16.3.0-m3
+digest: sha256:c4612649a991c1eea6a1e79f89523495c641045c94f499c175a493fb5f5d2cf6
+generated: "2023-03-01T19:59:37.273064+02:00"
