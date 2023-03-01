@@ -27,7 +27,7 @@ dependencies:
   - name: service-creator
     version: 0.1.0
     repository: "https://sapirgila.github.io/mcs-charts-sapir/charts/"
-  - name: service-creator
+  - name: service-operator
     version: 0.1.0
     repository: "https://sapirgila.github.io/mcs-charts-sapir/charts/"
   - name: xap
