@@ -2,11 +2,11 @@ dependencies:
 - name: service-creator
   repository: https://sapirgila.github.io/mcs-charts-sapir/charts/
   version: 0.1.0
-- name: service-creator
+- name: service-operator
   repository: https://sapirgila.github.io/mcs-charts-sapir/charts/
   version: 0.1.0
 - name: xap
   repository: http://resources.gigaspaces.com/helm-charts-ea
   version: 16.3.0-m3
-digest: sha256:6635372993b1041f526305c9c5587fcc036cc2fa3710907a973f7d83bdaae393
-generated: "2023-03-02T01:13:25.31027+02:00"
+digest: sha256:9eb6cd754675e18033d67fcb000ff5c4008a182549053acdfd33f6be82e4f208
+generated: "2023-03-02T01:25:56.054039+02:00"
