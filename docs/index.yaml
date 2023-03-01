@@ -3,7 +3,7 @@ entries:
   integration-tests:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2023-03-01T22:24:40.908429+02:00"
+    created: "2023-03-01T22:37:09.924769+02:00"
     dependencies:
     - name: xap
       repository: http://resources.gigaspaces.com/helm-charts-ea
@@ -15,38 +15,4 @@ entries:
     urls:
     - https://sapirgila.github.io/mcs-charts-sapir/integration-tests-0.1.0.tgz
     version: 0.1.0
-  xap:
-  - apiVersion: v2
-    appVersion: "1.0"
-    created: "2023-03-01T22:24:40.911922+02:00"
-    dependencies:
-    - alias: manager
-      name: xap-manager
-      repository: file://../xap-manager
-      version: 16.3.0-m3
-    - alias: operator
-      name: xap-operator
-      repository: file://../xap-operator
-      version: 16.3.0-m3
-    - alias: spacedeck
-      condition: spacedeck.enabled
-      name: spacedeck
-      repository: file://../spacedeck
-      version: 16.3.0-m3
-    - alias: grafana
-      condition: metrics.enabled
-      name: grafana
-      repository: https://grafana.github.io/helm-charts
-      version: 6.44.7
-    - alias: influxdb
-      condition: metrics.enabled
-      name: influxdb
-      repository: https://influxdata.github.io/helm-charts
-      version: 4.12.0
-    description: A Helm chart for GigaSpaces XAP
-    digest: fd5bd09c44281e1d2b666602e8ccff6bc9fc7c9049ad17c81c00ff69bf728a57
-    name: xap
-    urls:
-    - https://sapirgila.github.io/mcs-charts-sapir/charts/xap-16.3.0-m3.tgz
-    version: 16.3.0-m3
-generated: "2023-03-01T22:24:40.901651+02:00"
+generated: "2023-03-01T22:37:09.918417+02:00"
